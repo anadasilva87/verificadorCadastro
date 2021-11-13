@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="./Assets/undraw_authentication.svg" alt="autenticação">
+
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form method="post" class="b7validator">
+                <label for="">
+                    Seu nome: <br>
+                    <input type="text" name="nome" data-rules="required|min=2">
+                </label>
+                <label for="">
+                    Seu email: <br>
+                    <input type="email" name="email" data-rules="required|email">
+                </label>
+                <label for="">
+                    Sua senha: <br>
+                    <input type="password" name="senha" data-rules="required|min=4">
+                </label>
+                <label for="">
+                    Confirme sua senha: <br>
+                    <input type="password" name="confirmasenha" data-rules="required|confirm">
+                </label>
+                <label for="" id="button">
+                    <input type="submit" value="Cadastrar">
+                </label>
+            </form>
+
+            <div class="login">
+                <a href=""> Já tem uma conta? Faça o login</a>
+            </div>
+            <div class="footer">
+            Created by<a class="linkedin" target="blank" href="https://www.linkedin.com/in/anaritarodrigues87/">Ana Rodrigues </a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
